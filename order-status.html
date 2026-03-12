@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Status | Rare Planet Clone</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .order-section {
+            padding: 80px 5%;
+            background-color: var(--background);
+            min-height: 70vh;
+        }
+
+        .order-card {
+            background-color: var(--surface);
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: var(--shadow-md);
+        }
+
+        .order-card h2 {
+            margin-bottom: 25px;
+            color: var(--primary);
+            text-align: center;
+        }
+
+        .tracking-box {
+            background-color: #fcfcfc;
+            border: 1px solid var(--border);
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+        }
+
+        .tracking-input {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid var(--border);
+            border-radius: 4px;
+            margin-top: 8px;
+            font-family: var(--font-body);
+        }
+
+        .order-steps {
+            display: flex;
+            justify-content: space-between;
+            position: relative;
+            margin-top: 40px;
+        }
+
+        .order-steps::before {
+            content: '';
+            position: absolute;
+            top: 15px;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background-color: var(--border);
+            z-index: 1;
+        }
+
+        .step {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            width: 80px;
+        }
+
+        .step-icon {
+            width: 32px;
+            height: 32px;
+            background-color: var(--border);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 10px;
+            font-size: 0.8rem;
+        }
+
+        .step.active .step-icon {
+            background-color: var(--primary);
+        }
+
+        .step-label {
+            font-size: 0.75rem;
+            font-weight: 500;
+            color: var(--text-muted);
+        }
+
+        .step.active .step-label {
+            color: var(--primary);
+            font-weight: 700;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">RARE PLANET</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="deals.html">Deals & Offers</a></li>
+                <li><a href="order-status.html">Order Status</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+            <div class="nav-actions">
+                <i class="fa-solid fa-cart-shopping btn-icon"></i>
+            </div>
+        </div>
+    </nav>
+
+    <div class="order-section">
+        <div class="order-card">
+            <h2>Track Your Masterpiece</h2>
+            <div class="tracking-box">
+                <label style="font-size: 0.9rem; font-weight: 600;">Order ID / Tracking Number</label>
+                <input type="text" class="tracking-input" placeholder="e.g. RP-123456789">
+                <button class="btn-primary" style="width: 100%; margin-top: 15px; border: none; cursor: pointer;">Track
+                    Order</button>
+            </div>
+
+            <div class="order-steps">
+                <div class="step active">
+                    <div class="step-icon">1</div>
+                    <div class="step-label">Placed</div>
+                </div>
+                <div class="step active">
+                    <div class="step-icon">2</div>
+                    <div class="step-label">Processing</div>
+                </div>
+                <div class="step">
+                    <div class="step-icon">3</div>
+                    <div class="step-label">Shipped</div>
+                </div>
+                <div class="step">
+                    <div class="step-icon">4</div>
+                    <div class="step-label">Delivered</div>
+                </div>
+            </div>
+
+            <p style="text-align: center; margin-top: 40px; font-size: 0.9rem; color: var(--text-muted);">
+                Need help? <a href="#" style="color: var(--primary); font-weight: 600;">Contact Support</a>
+            </p>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2026 Rare Planet Clone. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

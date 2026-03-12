@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deals & Offers | Rare Planet Clone</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .deals-banner {
+            background-color: var(--primary);
+            color: var(--white);
+            padding: 40px 0;
+            text-align: center;
+        }
+
+        .badge-deal {
+            background-color: #d9534f;
+            color: white;
+            padding: 4px 10px;
+            border-radius: 4px;
+            font-size: 0.75rem;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+
+        .old-price {
+            text-decoration: line-through;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            margin-right: 8px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">RARE PLANET</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="deals.html">Deals & Offers</a></li>
+                <li><a href="order-status.html">Order Status</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+            <div class="nav-actions">
+                <i class="fa-solid fa-magnifying-glass btn-icon"></i>
+                <i class="fa-solid fa-cart-shopping btn-icon"></i>
+            </div>
+        </div>
+    </nav>
+
+    <div class="deals-banner">
+        <div class="container">
+            <h1>Special Deals & Offers</h1>
+            <p>Authentic handicrafts at incredible prices. Limited time only!</p>
+        </div>
+    </div>
+
+    <section class="section">
+        <div class="container">
+            <div class="grid">
+                <!-- Deal Item 1 -->
+                <div class="card" style="position: relative;">
+                    <span class="badge-deal">30% OFF</span>
+                    <div class="card-img">
+                        <img src="https://i.etsystatic.com/31752652/r/il/bfe472/4563098635/il_1080xN.4563098635_angx.jpg" alt="Ceramic Mug">
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Handpainted Ceramic Mug</h3>
+                        <p><span class="old-price">₹699</span><span class="card-price">₹489</span></p>
+                    </div>
+                </div>
+                <!-- Deal Item 2 -->
+                <div class="card" style="position: relative;">
+                    <span class="badge-deal">20% OFF</span>
+                    <div class="card-img">
+                        <img src="https://m.media-amazon.com/images/I/61czCufkpZL._SL1280_.jpg" alt="Copper Bottle">
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Copper Water Bottle</h3>
+                        <p><span class="old-price">₹1,599</span><span class="card-price">₹1,279</span></p>
+                    </div>
+                </div>
+                <!-- Deal Item 3 -->
+                <div class="card" style="position: relative;">
+                    <span class="badge-deal">15% OFF</span>
+                    <div class="card-img">
+                        <img src="https://devsabha.com/wp-content/uploads/2022/01/IMG_20211219_212020__01_resize_92.jpg" alt="Brass Statue">
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Brass Ganesha Idol</h3>
+                        <p><span class="old-price">₹2,499</span><span class="card-price">₹2,124</span></p>
+                    </div>
+                </div>
+                <!-- Deal Item 4 -->
+                <div class="card" style="position: relative;">
+                    <span class="badge-deal">40% OFF</span>
+                    <div class="card-img">
+                        <img src="https://i.etsystatic.com/19688306/r/il/a30c8f/4830807677/il_600x600.4830807677_4ylf.jpg" alt="Terracotta Vase">
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Handpainted Vase</h3>
+                        <p><span class="old-price">₹999</span><span class="card-price">₹599</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2026 Rare Planet Clone. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
